@@ -9,6 +9,7 @@ app.use(express.static(__dirname));
 app.set('views', __dirname);
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
+//const ssl = !!process.env.DATABASE_URL;
 const port = 5000;
 let arrayOfColors = '';
 let counter = 0;
