@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://forum.kotodom.ru/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" xml:lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta http-equiv="content-language" content="ru">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+<link rel="stylesheet" crossorigin="anonymous" href="./cotodom_files/main.css"><script async="" src="./cotodom_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./cotodom_files/watch.js.Без названия"></script><script type="text/javascript" async="" src="./cotodom_files/recaptcha__ru.js.Без названия"></script><script src="./cotodom_files/api.js.Без названия"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9666451371928864",
+          enable_page_level_ads: true
+     });
+</script>
+<title>Главная страница • Форум КОТОДОМ</title>
+
+<link rel="stylesheet" href="./cotodom_files/stylesheet.css" type="text/css">
+
+<script type="text/JavaScript">
+function getElement(iElementId)
+{
+   if (document.all) 
+   {
+      return document.all[iElementId];
+   }
+   if (document.getElementById)
+   {
+      return document.getElementById(iElementId);
+   }
+}
+
+function toggleElement(oElement)
+{
+   if (oElement.style.display == "none")
+   {
+      oElement.style.display = "";
+   }
+   else
+   {
+      oElement.style.display = "none";
+   }
+}
+</script>
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+/*
+function jumpto() {
+	var page = prompt('Введите номер страницы, на которую хотите перейти:', '1');
+	var perpage = '10';
+	var base_url = './index.php';
+	var seo_delim_start = '';
+	var seo_static_pagination = '';
+	var seo_ext_pagination = '';
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0) {
+		var seo_page = (page - 1) * perpage;
+		var anchor = '';
+		var anchor_parts = base_url.split('#');
+		if ( anchor_parts[1] ) {
+			base_url = anchor_parts[0];
+			anchor = '#' + anchor_parts[1];
+		}
+		if ( base_url.indexOf('?') >= 0 ) {
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + seo_page + anchor;
+		} else if ( seo_page > 0 ) {
+			var seo_type1 = base_url.match(/\.[a-z0-9]+$/i);
+			if (seo_type1 !== null) {
+				document.location.href = base_url.replace(/\.[a-z0-9]+$/i, '') + seo_delim_start + seo_page + seo_type1 + anchor;
+			}
+			var seo_type2 = base_url.match(/\/$/);
+			if (seo_type2 !== null) {
+				document.location.href = base_url + seo_static_pagination + seo_page + seo_ext_pagination + anchor;
+			}
+		} else {
+			document.location.href = base_url + anchor;
+		}
+	}
+}
+var seo_external = ;
+var seo_external_sub = ;
+var seo_ext_classes = ;
+var seo_hashfix = ;
+*/
+/**
+*  phpbb_seo_href()
+*  Fixes href="#something" links with virtual directories
+*  Optionally open external or marked with a css class links in a new window
+*  in a XHTML 1.x compliant way.
+*/
+function phpbb_seo_href() {
+	var current_domain = document.domain.toLowerCase();
+	if (!current_domain || !document.getElementsByTagName) return;
+	if (seo_external_sub && current_domain.indexOf('.') >= 0) {
+		current_domain = current_domain.replace(new RegExp(/^[a-z0-9_-]+\.([a-z0-9_-]+\.([a-z]{2,6}|[a-z]{2,3}\.[a-z]{2,3}))$/i), '$1');
+	}
+	if (seo_ext_classes) {
+		var extclass = new RegExp("(^|\s)(" + seo_ext_classes + ")(\s|$)");
+	}
+	if (seo_hashfix) {
+		var basehref = document.getElementsByTagName('base')[0];
+		if (basehref) {
+			basehref = basehref.href;
+			var hashtest = new RegExp("^(" + basehref + "|)#[a-z0-9_-]+$");
+			var current_href = document.location.href.replace(/#[a-z0-9_-]+$/i, "");
+		} else {
+			seo_hashfix = false;
+		}
+	}
+	var hrefels = document.getElementsByTagName("a");
+	var hrefelslen = hrefels.length;
+	for (var i = 0; i < hrefelslen; i++) {
+		var el = hrefels[i];
+		var hrefinner = el.innerHTML.toLowerCase();
+		if (el.onclick || (el.href == '') || (el.href.indexOf('javascript') >=0 ) || (el.href.indexOf('mailto') >=0 ) || (hrefinner.indexOf('<a') >= 0) ) {
+			continue;
+		}
+		if (seo_hashfix && el.hash && hashtest.test(el.href)) {
+			el.href = current_href + el.hash;
+		}
+		if (seo_external) {
+			if ((el.href.indexOf(current_domain) >= 0) && !(seo_ext_classes && extclass.test(el.className))) {
+				continue;
+			}
+			el.onclick = function () { window.open(this.href); return false; };
+		}
+	}
+}
+window.onload = function() {
+	if (seo_external || seo_hashfix) {
+		phpbb_seo_href();
+	}
+	// here you can add other window.onload events
+}
+// www.phpBB-SEO.com SEO TOOLKIT END
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+<script type="text/javascript" charset="utf-8" async="" src="./cotodom_files/14e85991a0263a8fe0b1.js.Без названия"></script><script charset="utf-8" src="./cotodom_files/watch.js.Без названия"></script><style type="text/css" nonce="0611E4AF5742AB4C8775AF05D93933E9">#AD_CONTROL_28,#AD_Top,#AD_banner,#AdColumn,#AdContainer,#AdHeader,#AdImage,#AdSense1,#Adcode,#AdvertiseFrame,#Advertisements,#BottomAdContainer,#BottomAds,#ContentAd,#HeroAd,#PreRollAd,#RightAdBlock,#TopAd,#WNAd41,#ab_adblock,#ad-area,#ad-background,#ad-bg,#ad-bottom,#ad-buttons,#ad-container,#ad-header,#ad-header-728x90,#ad-lead,#ad-leaderboard,#ad-main,#ad-panel,#ad-right,#ad-rotator,#ad-target,#ad-text,#ad-top,#ad-top-banner-placeholder,#ad-top-wrapper,#ad-unit,#ad-wrapper,#ad468,#ad728,#ad728x90,#adBanner,#adBanner1,#adBelt,#adComponentWrapper,#adDiv,#adFrame,#adGallery,#adHeader,#adHolder,#adLayer,#adLeader,#adLink1,#adPosition0,#adText,#ad_1,#ad_2,#ad_3,#ad_4,#ad_5,#ad_728_90,#ad_area,#ad_banner,#ad_center,#ad_content,#ad_global_above_footer,#ad_header,#ad_leaderboard,#ad_main,#ad_overlay,#ad_ph_1,#ad_space,#ad_square,#ad_table,#ad_top,#ad_topslot,#ad_unit,#ad_wrap,#ad_wrapper,#adaptv_ad_player_div,#adbackground,#adbanner,#adbar,#adblock,#adboard,#adbody,#adbox,#adcode,#adcontainer,#adcontainer1,#adcontent,#adhead,#adheader,#adimg1,#adlayer,#adnews,#adposition3,#adright,#ads-1,#ads-col,#ads-wrapper,#ads1,#ads2,#ads3,#ads4,#adsHeader,#adsIframe,#ads_bottom,#ads_iframe,#ads_right,#ads_top,#ads_wrapper,#adsdiv,#adsense,#adsense2,#adsense_block,#adsense_inline,#adsensewide,#adspace,#adspace_top,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adstop,#adtext,#adtop,#adv,#adv-masthead,#adv-title,#adv-top,#adv_config,#adv_right,#advblock,#advert-1,#advert1,#advert2,#advertContainer,#advert_box,#advertise,#advertisement1,#advertisetop,#advertising_wrapper,#adverts,#advtop,#adwrapper,#banner-ad,#bannerAd,#bannerAdWrapper,#banner_ad,#banner_topad,#bannerad,#bigAd,#bigad,#body_ad,#bottomAd,#bottomAds,#bottom_ad,#centerads,#cmn_ad_tag_head,#content-header-ad,#contentAd,#content_ads,#content_adv,#contentad,#contentadcontainer,#ctlDisplayAd1_lblAd,#dart-container-728x90,#dfp_ad_Entry_728x90,#dfp_ad_Home_728x90,#divAd,#div_prerollAd_1,#download_ad,#featuread,#featured-ads,#featuredAds,#feed_links_ad_container,#footer-ads,#footer_ad,#footer_ads,#game-ad,#googlead,#gridAdSidebar,#head-ad,#header-ads,#headerAd,#headerAdContainer,#header_ad,#homead,#inner-advert-row,#ka_adRightSkyscraperWide,#leaderAd,#leaderBoardAd,#leaderboard-ad,#leaderboard-advertisement,#leaderboardad,#left-ad,#left_ads,#leftad,#leftads,#logoAd,#logo_ad,#mainAd,#main_ad,#mpu2,#mpu2_container,#mpu_container,#msad,#my-adsFPAD,#myAd,#player_ads,#pre_advertising_wrapper,#prerollAd,#promo-ad,#publicidad,#reklama,#rh-ad,#right_ad,#right_ads,#right_adsense,#search-sponsor,#searchAd,#search_ads,#sideAd,#side_ads,#sidebar-ads,#sidebar_ad,#sidebar_ads,#skybox-ad,#sponsorAdDiv,#sponsorText,#sponsor_ad,#sponsoredwellcontainerbottom,#sponsors-home,#takeover_ad,#text-ads,#theAd,#top-ad,#top-ad-content,#topAd,#topAdSpace,#topAdSpace_div,#topAds,#topAdvert,#topBannerAd,#top_ad,#top_ads,#topad,#topadvert,#topbannerad,#tv_player a[href*="baskino."][target="_blank"],#under_story_ad,#video-adv,#videoAd,#videoAdContainer,#videoads,#vkMsg,.ADBAR,.AdBar,.AdBody:not(body),.AdBox,.AdInfo,.AdSense,.AdSidebar,.AdTitle,.AdvertContainer,.HomeAds,.IM_ad_unit,.LazyLoadAd,.RelatedAds,.SponsoredContent,.ad-300x250,.ad-970,.ad-banner,.ad-block,.ad-body,.ad-border,.ad-btn,.ad-button,.ad-cat,.ad-cell,.ad-cluster,.ad-display,.ad-enabled,.ad-fixed,.ad-flag,.ad-grid,.ad-header,.ad-holder,.ad-icon,.ad-img,.ad-inner,.ad-item,.ad-leader-top,.ad-leaderboard,.ad-left,.ad-link,.ad-links,.ad-loaded,.ad-panel,.ad-placement,.ad-rail,.ad-right,.ad-row,.ad-scroll,.ad-section,.ad-served,.ad-sidebar,.ad-source,.ad-square,.ad-stack,.ad-text,.ad-top,.ad-unit,.ad-unit-300-wrapper,.ad-vertical-container,.ad-wide,.ad-wrap,.ad-wrapper,.ad300,.ad468,.ad728,.ad90,.adBanner,.adBar,.adBlock,.adBottomBoard,.adBox,.adChoicesLogo,.adContent,.adDiv,.adElement,.adFrame,.adFrameCnt,.adHead,.adHeader,.adHeaderblack,.adHeadline,.adHolder,.adHoldert,.adImg,.adItem,.adLink,.adMessage,.adMiddle,.adMod,.adModule,.adOverlay,.adPanel,.adPod,.adResult,.adRight,.adRotator,.adSpace,.adSpot,.adText,.adTitle,.adTopHome,.adWidget,.adWrap,.ad_1,.ad_160,.ad_160x600,.ad_2,.ad_3,.ad_728x90,.ad_960,.ad_Right,.ad_block,.ad_body,.ad_bottom,.ad_container,.ad_content,.ad_description,.ad_global_header,.ad_head_rectangle,.ad_header,.ad_image,.ad_img,.ad_item,.ad_large,.ad_leaderboard,.ad_middle,.ad_outer,.ad_promo,.ad_slug_table,.ad_small,.ad_space,.ad_spot,.ad_text,.ad_title,.ad_trick_header,.ad_trick_left,.ad_wrap,.ad_wrapper,.adarea,.adbanner,.adbar,.adbottom,.adbutton,.adcolumn,.adcont,.addiv,.adframe,.adfree,.adheader,.adholder,.adinfo,.adkit,.adlink,.adlist,.admain,.admiddle,.adright,.adrow1,.adrow2,.ads-1,.ads-2,.ads-3,.ads-300-250,.ads-area,.ads-bg,.ads-box,.ads-col,.ads-content,.ads-footer,.ads-header,.ads-holder,.ads-iframe,.ads-image,.ads-inline,.ads-item,.ads-list,.ads-right,.ads-section,.ads-title,.ads-top,.ads1,.adsBlock,.adsBox,.adsWidget,.ads_block,.ads_catDiv,.ads_div,.ads_item,.ads_top,.ads_wrapper,.adsbottombox,.adsbox,.adsbygoogle,.adscontainer,.adsense-header,.adsense_wrapper,.adshome,.adside,.adsinfo,.adsizewrapper,.adslot,.adslot_1,.adslot_300,.adslot_blurred,.adspace,.adtable,.adtile,.adtop,.adtxt,.adv,.adv-block,.adv-box,.adv-header,.adv-list,.adv-right,.adv-text,.adv300,.advBox,.adv_1,.adv_300,.adv_left,.adv_right,.adv_title,.adv_top,.adv_txt,.advblock,.advert-block,.advert-box,.advert-container,.advert-content,.advert-horizontal,.advert-wrapper,.advert2,.advertColumn,.advertContainer,.advertLink,.advertText,.advert_area,.advert_container,.advert_list,.advertblock,.advertbox,.advertisement-1,.advertisement-block,.advertisement__leaderboard,.advertiser,.advertising-content,.advertising_banner,.advertising_block,.advertisment,.advertorial,.adverts,.adverttext,.advt,.advtext,.adwolf-holder,.adwords,.afs_ads,.after-post-ad,.ammblock,.article-advert,.article_ad,.b-adv,.b-advert,.b-banner,.b-media-banner,.banner-ad,.banner-ads,.banner-adv,.banner160x600,.banner300,.bannerAd,.banner_728x90,.banner_ad,.banner_box,.bannerad,.big-ads,.block-ad,.block-ec_ads,.block-simpleads,.blog-ads,.bottom-ad,.bottom-ads,.bottom-left-ad,.bottomAds,.bottom_ad_block,.box-ads,.box-radvert,.box-recommend-ad,.box_ads,.box_adv,.boxad,.boxadv,.btn-ad,.can_ad_slug,.category-ad,.change_AdContainer,.chitikaAdBlock,.container_ad,.container_row_ad,.contentAd,.contentAds,.content_ads,.content_tagsAdTech,.context-ads,.cp-adsInited,.custom-ad,.ddb,.desktop-ad,.desktop_ad,.dfp-ad,.dfp-ad-unit,.dfp-tag-wrapper,.displayAd,.download_ad,.easyazon-block,.ec-ads-remove-if-empty,.ezAdsense,.featured-ad,.featuredAdBox,.flash-advertisement,.footer-ad,.footer-ads,.footer_ad,.footerad,.forumAd,.gallery-ad,.google-sponsored,.googleAdSense,.googleAds,.google_ad,.greyAd,.grf-list__item:not([data-type="ae"]),.grf-widget__logo,.grid-item-ad,.has-ad,.hasads,.header-ad,.headerAd,.header_ad,.header_ad_center,.header_advert,.headerad,.headerads,.home-ad,.home-ads,.homeAd,.homead,.homepage-ad,.homepage_ads,.horizontal_ad,.imageAds,.img_ad,.imgad,.inner_ad,.innerad,.insert-post-ads,.ipsAd,.item-ads,.item-container-ad,.js-sticky-ad,.lastads,.leaderboard-ad,.leaderboard-ads,.leftAd,.leftad,.list-ad,.list-ads,.listad,.logo-ad,.madv,.marketing-ad,.mid_ad,.middle_AD,.module-ad,.nativead,.nav-ad,.newsAd,.node-ad,.oasad,.oio-banner-zone,.openx,.overlay-ads,.pads2,.page-ad,.page_ad,.plainAd,.playerAd,.player_ad,.player_hover_ad,.post-ad,.post-sponsored,.post_ad,.postad,.premiumAdOverlay,.premiumAdOverlayClose,.promoAd,.pub_300x250,.pub_300x250m,.pub_728x90,.publicidade,.pushdown-ad,.quads-location,.rail-ad,.rbRectAd,.rectangle_ad,.refreshAds,.region-top-ad-position,.reklam,.reklama,.reportAdLink,.resultad,.review-ad,.right-ad,.rightAd,.right_ad,.right_ads_column,.rightad,.rightadv,.searchAds,.searchad,.searchads,.section-adv,.section-sponsor,.showAd,.showads,.side-ad,.side-bar-ad-position1,.sideAd,.sidebar-ad-c,.sidebar-ads,.single-ad,.singleAd,.skinAd,.sky_ad,.skyscraperAd,.slide-ad,.smallAd,.small_ad,.smallads,.sponsor-box,.sponsor-logo,.sponsorBlock,.sponsorBottom,.sponsor_block,.sponsoredLinks,.sponsorlink,.sticky-ad,.story-ad,.taboola-ad,.tc_ad_unit,.td-ad,.td-header-ad-wrap,.text-ad,.text-ad-links,.text-ads,.textAd,.text_ad,.text_ads,.textad,.textads,.top-ad,.top-ad-container,.top-ad-content,.top-ad-wrapper,.top-advert,.topAD,.topAds,.top_ad,.top_ad_div,.top_ad_wrap,.top_ads,.topads,.tower-ad,.trc-content-sponsored,.trc_rbox .syndicatedItem,.trc_rbox_border_elm .syndicatedItem,.trc_rbox_div .syndicatedItem,.trc_related_container div[data-item-syndicated="true"],.type_ads_default,.vertical-ads,.view_ad,.wide-ad,.wideAd,.withAds,.wnad,.wpInsertInPostAd,.wp_bannerize,.wrapad,.yom-ad,[href*="media.hubfiles.gdn"],[href*="xlovecam.com/promo/tracking/"],[href^="http://in.mydirtyhobby.com/track/"],[href^="http://join.allofgfs.com/track/"],[href^="http://join.freshgfs.com/track/"],[href^="http://join.innocenthigh.com/track/"],[href^="http://join.muffx.com/track/"],[href^="http://join.seemygf.com/track/"],[href^="http://join.self-shot.com/track/"],[href^="http://join.teengfsex.com/track/"],[href^="http://myalternativegflink.com/track/"],[href^="http://secure.18exgfs.com/track/"],[href^="http://secure.badassgirlfriends.com/track/"],[href^="http://secure.bustygfsexposed.com/track/"],[href^="http://secure.chatrevenge.com/track/"],[href^="http://secure.dagfs.com/track/"],[href^="http://secure.fubilov.com/track/"],[href^="http://secure.hotgfvideos.com/track/"],[href^="http://secure.mynngf.com/track/"],[href^="http://secure.obsessedwithmyself.com/track/"],[href^="http://secure.publicgfvideos.com/track/"],[href^="http://secure.realgfsexposed.com/track/"],[href^="http://secure.slutswithphones.com/track/"],[href^="http://secure.watchmygf.com/track/"],[id*="ScriptRoot"],a[href*="&utm_medium=cpa"][target="_blank"],a[href*=".converteam.online"],a[href*=".revimedia.com/"],a[href*=".trust.zone"],a[href*=".yvok.ru"],a[href*="//admag.pro/"],a[href*="//ukrmedia.center/"],a[href*="/adrotate-out.php?"],a[href*="/advtise.net"],a[href*="/bodyclick.net"],a[href*="/hit.all-in-one.pp.ua/search?"],a[href*="/luckproducti.ru"],a[href*="/maniya.info"],a[href*="/relap.io/adv/"],a[href*="/rikkobr.com"],a[href*="/skiles.link"],a[href*="/starinform.ru"],a[href*="/traforet.com"],a[href*="101xp.com/?utm_source=ad"],a[href*="1xwgn.xyz"],a[href*="2di.site"],a[href*="://winline.ru"],a[href*="abs-cdn.org"],a[href*="actionteaser.ru"],a[href*="adsmedia-provider.com"],a[href*="advclicks.net"],a[href*="advert-content.com"],a[href*="aff-ads.com"],a[href*="autochetki.ru"] img,a[href*="autoteaser.net"],a[href*="bigleads.ru"],a[href*="binomo.com/promo"] > img,a[href*="bromigo.pw"],a[href*="catcut.net"],a[href*="clickscloud.net"],a[href*="cpagette.com"],a[href*="cpagetti.com"],a[href*="cpagettio.com"],a[href*="cpaggetti.com"],a[href*="cpaggetti.ru"],a[href*="cpamatica.com"],a[href*="direct"][href*="advert.ru"],a[href*="download-center.club"],a[href*="globalteaser.ru"],a[href*="incrypted.net"][href*="banner"][target="_blank"],a[href*="installoffer.net"],a[href*="kadam.net"],a[href*="kadam.ru"],a[href*="leadadvert.ru"],a[href*="lenkmio.com"][target="_blank"],a[href*="marathonmirrorbet.com"],a[href*="marketgid.com/"],a[href*="medicinetizer.ru"],a[href*="novostimira.biz"],a[href*="omnicpa.ru"],a[href*="onetwoaffiliates.com"],a[href*="people-group.su"],a[href*="promoheads.com"],a[href*="reals-gooods.ru"],a[href*="recreativ.ru"],a[href*="redtram.com"],a[href*="rootmedia.cc"],a[href*="runetki.com"],a[href*="salesdoubler.com.ua"],a[href*="teasermoney.com"],a[href*="tizerclick.com"],a[href*="tovar.helloprice.ru/click/"],a[href*="trafmag.com"],a[href*="true-gooods.ru"],a[href*="universallnk.com"],a[href*="www.nnn.ru"],a[href*="wwwapteka.info"],a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]),a[href*="zozoter.ru"],a[href^="http://ad-emea.doubleclick.net/"],a[href^="http://ad.doubleclick.net/"],a[href^="http://adfarm.mediaplex.com/"],a[href^="http://ads.betfair.com/redirect.aspx?"],a[href^="http://ads2.williamhill.com/redirect.aspx?"],a[href^="http://adserving.unibet.com/"],a[href^="http://adultfriendfinder.com/p/register.cgi?pid="],a[href^="http://affiliate.coral.co.uk/processing/"],a[href^="http://amigo-free.website/"],a[href^="http://amigo-source.website/"],a[href^="http://amigoman.pw/"],a[href^="http://amigone.pw/"],a[href^="http://marketgid.com"],a[href^="http://mgid.com/"],a[href^="http://online.ladbrokes.com/promoRedirect?"],a[href^="http://partner.sbaffiliates.com/"],a[href^="http://pubads.g.doubleclick.net/"],a[href^="http://us.marketgid.com"],a[href^="http://www.adskeeper.co.uk/"],a[href^="http://www.fbooksluts.com/"],a[href^="http://www.fleshlight.com/"],a[href^="http://www.liutilities.com/"],a[href^="http://www.socialsex.com/"],a[href^="http://www.yourfuckbook.com/?"],a[href^="https://ad.doubleclick.net/"],a[href^="https://servedbyadbutler.com/"],a[href^="https://www.financeads.net/tc.php?"],a[onclick*="media-rotate.com"],a[onclick*="reklamka.ru.net"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],div[class*="notifier_baloon_"],div[data-native_ad],div[id$="notifiers_wrap"],div[id^="MarketGid"],div[id^="adfox_"],div[id^="advads-"],div[id^="cpa_rotator_block"],div[id^="crt-"][style],div[id^="dfp-ad-"],div[id^="div-gpt-ad"],div[id^="google_ads_iframe_"],div[id^="vk_ads_"],div[itemtype="http://schema.org/WPAdBlock"],form[action^="//12go.asia/"][target="_blank"] > .powered,iframe[id^="google_ads_frame"],iframe[id^="google_ads_iframe"],iframe[src*=".cameraprive.com"],iframe[src*="//sass.com.ua/"],iframe[src*="/adnetpartner.com"],iframe[src*="/uniontraff.com"],iframe[src*="bongacams.com"],iframe[src*="directadvert"],iframe[src^="http://ad.yieldmanager.com/"],iframe[src^="https://www.favorit.com.ua/"],iframe[width="240"][height="400"],img[width="468"][height="60"],img[width="728"][height="90"],noindex a[href^="http://www.westmister.eu/collection/"],noindex a[href^="http://www.westmister.eu/collection/"] ~ * {display: none !important; color: #72ad1a !important; background-color: #449e08 !important;}</style><script type="text/javascript" async="" crossorigin="anonymous" src="./cotodom_files/host.js.Без названия"></script></head>
+<body class="ltr">
+
+<a name="top"></a>
+
+<table cellpadding="0" cellspacing="3" class="mainmenu">
+<tbody><tr>
+
+	<td width="3%" align="center"><a href="http://forum.kotodom.ru/ucp.php?mode=register"><img src="./cotodom_files/icon_mini_register.gif" alt="Регистрация"></a></td>
+	<td width="9%" align="left"><a href="http://forum.kotodom.ru/ucp.php?mode=register">Регистрация</a></td>		
+
+	<td width="3%" align="center"><a href="http://forum.kotodom.ru/faq.php"><img src="./cotodom_files/icon_mini_faq.gif" alt="FAQ"></a></td>
+	<td width="4%" align="left"><a href="http://forum.kotodom.ru/faq.php">FAQ</a></td>
+
+	<td width="3%" align="center"><a href="http://forum.kotodom.ru/search.php"><img src="./cotodom_files/icon_mini_search.gif" alt="Поиск"></a></td>
+	<td width="5%" align="left"><a href="http://forum.kotodom.ru/search.php">Поиск</a></td>
+
+	<td align="right" class="txt01">
+		<!--Свободное общение любителей и заводчиков кошек-->
+<noindex><script type="text/javascript"><!--
+google_ad_client = "pub-9666451371928864";
+/* 728x90, ??????? 24.01.11 */
+google_ad_slot = "9421658908";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./cotodom_files/show_ads.js.Без названия">
+</script></noindex>
+	</td>
+</tr>
+</tbody></table>
+
+<div id="wrapmain">
+<div id="wrapheader">
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tbody><tr>
+			<td><a href="http://forum.kotodom.ru/"><img width="211" height="150" src="./cotodom_files/logo.png">
+</a></td>
+			<td width="100%" align="center"><h1>Форум КОТОДОМ</h1><span class="gen">Общение любителей и заводчиков кошек.</span></td>
+		</tr>
+		</tbody></table>
+	</div>
+
+	<table cellpadding="0" cellspacing="3" class="mainmenu">
+	<tbody><tr>
+		<td width="3%" align="center"><a href="http://www.kotodom.ru/"><img src="./cotodom_files/icon_mini_home.gif" alt="Вернуться на сайт КОТОДОМ"></a></td>
+		<td align="left"><a href="http://www.kotodom.ru/">Вернуться в котодом.ру</a></td>
+	
+
+		<td width="3%" align="center"><a href="http://forum.kotodom.ru/ucp.php?mode=login"><img src="./cotodom_files/icon_mini_login.gif" alt="Вход"></a></td>
+		<td width="5%" align="left">
+			<a href="http://forum.kotodom.ru/ucp.php?mode=login">Вход</a>
+		</td>
+
+	<td width="10%" align="left">
+		<script src="./cotodom_files/ulogin.js.Без названия"></script>
+		<div id="uLogin" x-ulogin-params="display=small&amp;fields=first_name,last_name,email,photo&amp;optional=bdate,country,city&amp;providers=vkontakte,odnoklassniki,mailru,facebook&amp;hidden=twitter,google,yandex,livejournal,openid&amp;redirect_uri=http%3A%2F%2Fforum.kotodom.ru%2Fucp.php%3Fmode%3Dregister" data-ulogin-inited="1555347310658" style="position: relative;"><div class="ulogin-buttons-container" style="margin: 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: default; float: none; position: relative; display: inline-block; width: 105px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; max-width: 100%; vertical-align: top; line-height: 0;"><div class="ulogin-button-vkontakte" data-uloginbutton="vkontakte" role="button" title="VK" style="margin: 0px 5px 5px 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: pointer; float: left; position: relative; display: inherit; width: 16px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/version/3.0/img/providers-16-classic.png?version=img.3.0.1&quot;) 0px -18px / 16px no-repeat;"></div><div class="ulogin-button-odnoklassniki" data-uloginbutton="odnoklassniki" role="button" title="Odnoklassniki" style="margin: 0px 5px 5px 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: pointer; float: left; position: relative; display: inherit; width: 16px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/version/3.0/img/providers-16-classic.png?version=img.3.0.1&quot;) 0px -35px / 16px no-repeat;"></div><div class="ulogin-button-mailru" data-uloginbutton="mailru" role="button" title="Mail.ru" style="margin: 0px 5px 5px 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: pointer; float: left; position: relative; display: inherit; width: 16px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/version/3.0/img/providers-16-classic.png?version=img.3.0.1&quot;) 0px -52px / 16px no-repeat;"></div><div class="ulogin-button-facebook" data-uloginbutton="facebook" role="button" title="Facebook" style="margin: 0px 5px 5px 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: pointer; float: left; position: relative; display: inherit; width: 16px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/version/3.0/img/providers-16-classic.png?version=img.3.0.1&quot;) 0px -69px / 16px no-repeat;"></div><div class="ulogin-dropdown-button" style="margin: 0px 5px 5px 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: pointer; float: none; position: relative; display: inline-block; width: 16px; height: 16px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/version/3.0/img/providers-16-classic.png?version=img.3.0.1&quot;) 0px -1px / 16px no-repeat; vertical-align: baseline;"></div></div><div style="margin: 0px; padding: 0px; outline: none; border-width: 5px; border-style: solid; border-color: transparent transparent rgb(102, 102, 102); border-image: initial; border-radius: 0px; cursor: default; float: none; position: absolute; display: none; width: 0px; height: 0px; left: 0px; top: 0px; box-sizing: content-box; z-index: 9999;"></div></div>
+	</td>
+
+	</tr>
+	</tbody></table>
+
+          <!-- реклама -->
+<div style="text-align:center;">
+<!-- Яндекс.Директ -->
+<script type="text/javascript">
+yandex_partner_id = 64352;
+yandex_site_bg_color = 'F9F7F4';
+yandex_stat_id = 1955454;
+yandex_ad_format = 'direct';
+yandex_font_size = 1.5;
+yandex_font_family = 'verdana';
+yandex_direct_type = 'horizontal';
+yandex_direct_limit = 3;
+yandex_direct_title_font_size = 2;
+yandex_direct_links_underline = false;
+yandex_direct_title_color = 'CC0000';
+yandex_direct_url_color = '333333';
+yandex_direct_text_color = '333333';
+yandex_direct_hover_color = '0000CC';
+yandex_direct_sitelinks_color = '0000CC';
+yandex_direct_favicon = true;
+N = yandex_stat_id;
+ Mmax = 5;
+ adn = Math.floor(Math.random() * Mmax) + 1;
+ yadid = N.toString() + adn.toString();
+ yandex_stat_id = parseInt(yadid);
+ if (adn == 1) yandex_direct_title_color = 'CC0000';
+ if (adn == 2) yandex_direct_title_color = '0000��';
+ if (adn == 3) yandex_direct_title_color = '009900';
+ if (adn == 4) yandex_direct_title_color = '000000';
+ if (adn == 5) yandex_direct_title_color = '603D14';
+ document.write('<sc'+'ript type="text/javascript" src="http://an.yandex.ru/system/context.js"></sc'+'ript>');
+ </script><script type="text/javascript" src="./cotodom_files/context.js.Без названия"></script><div id="Ya_sync_0"></div><script type="text/javascript" src="./cotodom_files/context_static_r_8158.js.Без названия" id="https://an.yandex.ru/resource/context_static_r_8158.js"></script>
+</div>
+          <!-- конец реклама -->
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tbody><tr>
+			<td class="genmed">
+				
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+		<tbody><tr>
+			<td class="gensmall"></td>
+			<td class="gensmall" align="right">Текущее время: 15 апр 2019, 19:55<br></td>
+		</tr>
+		</tbody></table>
+	</div>
+
+</div>
+
+<div id="wrapcentre">
+
+	
+	<p class="searchbar">
+		<span style="float: left;"><a href="http://forum.kotodom.ru/search.php?search_id=unanswered">Сообщения без ответов</a> | <a href="http://forum.kotodom.ru/search.php?search_id=active_topics">Активные темы</a></span>
+		
+	</p>
+	
+
+	<br style="clear: both;">
+
+	<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+	<tbody><tr>
+		<td class="row1">
+			<p class="breadcrumbs"><a href="http://forum.kotodom.ru/">Список форумов</a></p>
+			<p class="datetime">Часовой пояс: UTC + 3 часа </p>
+		</td>
+	</tr>
+	</tbody></table>
+
+	<br>
+<center></center><!-- begin mod: NV recent topics --><!-- $Id: recent_topics_body.html 68 2008-01-06 01:03:56Z nickvergessen $ -->
+<div id="pagecontent">
+	
+		<table width="100%" cellspacing="1">
+		<tbody><tr>
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Страница <strong>1</strong> из <strong>3</strong><br></td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="http://forum.kotodom.ru/#" onclick="jumpto(); return false;" title="Перейти на страницу…">На страницу</a> <strong>1</strong><span class="page-sep">, </span><a href="http://forum.kotodom.ru/index.php?start=10">2</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/index.php?start=20">3</a> &nbsp;<a href="http://forum.kotodom.ru/index.php?start=10">След.</a></b></td>
+		</tr>
+		</tbody></table>
+	
+	<table class="tablebg" width="100%" cellspacing="1">
+		<tbody><tr class="nav">
+			<td class="cat" colspan="5" valign="middle" align="center">Последние сообщения</td>
+		</tr>
+		<tr>
+			
+				<th colspan="2">&nbsp;Темы&nbsp;</th>
+			
+			<th>&nbsp;Ответы&nbsp;</th>
+			<th>&nbsp;Просмотры&nbsp;</th>
+			<th>&nbsp;Последнее сообщение&nbsp;</th>
+		</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 14 ноя 2018, 22:40" href="http://forum.kotodom.ru/topic13855.html" class="topictitle">Рыжик и Кузя (часть 5)</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic13855.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic13855-495.html">34</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic13855-510.html">35</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic13855-525.html">36</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10897">Все будет хорошо</a>
+					 15 апр 2019, 18:13
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">538</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">13756</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">15 апр 2019, 18:13</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10897">Все будет хорошо</a>
+						<a href="http://forum.kotodom.ru/post13855-665949.html#p665949"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 01 фев 2013, 01:14" href="http://forum.kotodom.ru/topic9720.html" class="topictitle">Наши подопечные( котейки живущие на улице)</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic9720.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic9720-690.html">47</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic9720-705.html">48</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic9720-720.html">49</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+					 15 апр 2019, 17:00
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">721</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">33665</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">15 апр 2019, 17:00</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+						<a href="http://forum.kotodom.ru/post9720-665948.html#p665948"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					<img src="./cotodom_files/icon_topic_attach.gif" width="14" height="18" alt="Вложения" title="Вложения"> <a title="Добавлено: 24 авг 2016, 21:02" href="http://forum.kotodom.ru/topic12545.html" class="topictitle">Мои белоснежные Тимофей и Кузьмишка, а еще Мальвинка(ч 12)</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic12545.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic12545-1020.html">69</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12545-1035.html">70</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12545-1050.html">71</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+					 15 апр 2019, 16:44
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">1053</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">45720</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">15 апр 2019, 16:44</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+						<a href="http://forum.kotodom.ru/post12545-665946.html#p665946"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 05 дек 2014, 17:30" href="http://forum.kotodom.ru/topic11482.html" class="topictitle">Фобос, Деймос, Барти и все-все-все (Часть 2)</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic11482.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic11482-945.html">64</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic11482-960.html">65</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic11482-975.html">66</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+					 15 апр 2019, 13:24
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">987</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">29713</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">15 апр 2019, 13:24</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+						<a href="http://forum.kotodom.ru/post11482-665938.html#p665938"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_locked.gif" width="19" height="18" alt="Эта тема закрыта, вы не можете редактировать и оставлять сообщения в ней." title="Эта тема закрыта, вы не можете редактировать и оставлять сообщения в ней."></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 23 мар 2019, 02:44" href="http://forum.kotodom.ru/topic14265.html" class="topictitle">Проблема с 17 летней кошкей</a>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17432">Vadim779</a>
+					 14 апр 2019, 06:27
+					
+						в форуме <a href="http://forum.kotodom.ru/forum1.html" style="font-weight: bold;">HELP!</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">4</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">211</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">14 апр 2019, 06:27</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17432">Vadim779</a>
+						<a href="http://forum.kotodom.ru/post14265-665931.html#p665931"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					<img src="./cotodom_files/icon_topic_attach.gif" width="14" height="18" alt="Вложения" title="Вложения"> <a title="Добавлено: 25 фев 2016, 20:16" href="http://forum.kotodom.ru/topic12265.html" class="topictitle">Мой любимый термимятор и его гаввернантка, часть 7</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic12265.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic12265-1380.html">93</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12265-1395.html">94</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12265-1410.html">95</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+					 13 апр 2019, 16:54
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">1411</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">50242</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">13 апр 2019, 16:54</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+						<a href="http://forum.kotodom.ru/post12265-665928.html#p665928"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 04 июл 2013, 13:11" href="http://forum.kotodom.ru/topic10258.html" class="topictitle">Синус и Васька, дворянин и принцесса</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic10258.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic10258-690.html">47</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic10258-705.html">48</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic10258-720.html">49</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+					 13 апр 2019, 16:16
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">730</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">25914</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">13 апр 2019, 16:16</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+						<a href="http://forum.kotodom.ru/post10258-665927.html#p665927"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 09 фев 2015, 19:10" href="http://forum.kotodom.ru/topic11624.html" class="topictitle">Человек и кошка (часть 4)</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic11624.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic11624-900.html">61</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic11624-915.html">62</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic11624-930.html">63</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+					 13 апр 2019, 16:09
+					
+						в форуме <a href="http://forum.kotodom.ru/forum18.html" style="font-weight: bold;">КОШКИ КОТОДОМА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">942</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">34139</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">13 апр 2019, 16:09</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=4672">Елена Васильевна</a>
+						<a href="http://forum.kotodom.ru/post11624-665926.html#p665926"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					 <a title="Добавлено: 11 апр 2019, 09:26" href="http://forum.kotodom.ru/topic14298.html" class="topictitle">Буду показывать тут наш процесс общения двух котов :)</a>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10461">Le-MURR</a>
+					 12 апр 2019, 19:42
+					
+						в форуме <a href="http://forum.kotodom.ru/forum3.html" style="font-weight: bold;">ВСЕ О НАШИХ КОШКАХ</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">5</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">104</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">12 апр 2019, 19:42</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10461">Le-MURR</a>
+						<a href="http://forum.kotodom.ru/post14298-665922.html#p665922"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td class="row1" width="25" align="center"><img src="./cotodom_files/topic_read_hot.gif" width="19" height="18" alt="Нет новых сообщений" title="Нет новых сообщений"></td>
+				
+				<td class="row1">
+					
+					<img src="./cotodom_files/icon_topic_attach.gif" width="14" height="18" alt="Вложения" title="Вложения"> <a title="Добавлено: 08 дек 2016, 14:46" href="http://forum.kotodom.ru/topic12669.html" class="topictitle">2 котёнка</a>
+					
+						<p class="gensmall"> [ На страницу: <a href="http://forum.kotodom.ru/topic12669.html">1</a><span class="page-dots"> ... </span><a href="http://forum.kotodom.ru/topic12669-975.html">66</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12669-990.html">67</a><span class="page-sep">, </span><a href="http://forum.kotodom.ru/topic12669-1005.html">68</a> ] </p>
+					
+					<p class="gensmall"> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+					 12 апр 2019, 12:02
+					
+						в форуме <a href="http://forum.kotodom.ru/forum10.html" style="font-weight: bold;">КОТЯТА</a>
+					
+					</p>
+				</td>
+				<td class="row1" width="50" align="center"><p class="topicdetails">1012</p></td>
+				<td class="row2" width="50" align="center"><p class="topicdetails">61690</p></td>
+				<td class="row1" width="140" align="center">
+					<p class="topicdetails" style="white-space: nowrap;">12 апр 2019, 12:02</p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a>
+						<a href="http://forum.kotodom.ru/post12669-665919.html#p665919"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				</td>
+			</tr>
+
+		
+		</tbody></table>
+</div>
+<br clear="all"><!-- end mod: NV recent topics --><table class="tablebg" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="cat" colspan="5" align="right">&nbsp;</td>
+</tr>
+<tr>
+	<th colspan="2">&nbsp;Форум&nbsp;</th>
+	<th width="50">&nbsp;Темы&nbsp;</th>
+	<th width="50">&nbsp;Сообщения&nbsp;</th>
+	<th>&nbsp;Последнее сообщение&nbsp;</th>
+</tr>
+
+		<tr>
+			<td class="cat" colspan="2"><h4><a href="http://forum.kotodom.ru/forum20.html">Общие форумы</a></h4></td>
+			<td class="catdiv" colspan="3">&nbsp;</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum1.html">HELP!</a>
+				<p class="forumdesc">Срочные вопросы о кошках, требующие оперативных советов.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">3305</p></td>
+			<td class="row2" align="center"><p class="topicdetails">46876</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">14 апр 2019, 06:27 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17432">Vadim779</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665931.html#p665931"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum2.html">ИЩУ ХОЗЯИНА!</a>
+				<p class="forumdesc">Все что связано с пристройством кошек и котят, здесь можно разместить объявления с фото.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">830</p></td>
+			<td class="row2" align="center"><p class="topicdetails">4904</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">22 мар 2019, 03:22 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=15974">Evrajka85</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665518.html#p665518"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum3.html">ВСЕ О НАШИХ КОШКАХ</a>
+				<p class="forumdesc">Рассказы любителей кошек о своих питомцах, любые истории о кошках.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">392</p></td>
+			<td class="row2" align="center"><p class="topicdetails">27369</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">12 апр 2019, 19:42 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10461">Le-MURR</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665922.html#p665922"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum18.html">КОШКИ КОТОДОМА</a>
+				<p class="forumdesc">Темы о кошках наших форумчан</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">1052</p></td>
+			<td class="row2" align="center"><p class="topicdetails">360958</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">15 апр 2019, 18:13 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10897">Все будет хорошо</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665949.html#p665949"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum12.html">ПОРОДЫ КОШЕК</a>
+				<p class="forumdesc">Обсуждение окрасов, стандартов. Генетика и бридинг.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">364</p></td>
+			<td class="row2" align="center"><p class="topicdetails">51913</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">14 мар 2019, 21:45 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17405">mikipiki</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665413.html#p665413"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum14.html">ВЫСТАВКИ КОШЕК</a>
+				<p class="forumdesc">Анонсы выставок от организаторов, обсуждение.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">307</p></td>
+			<td class="row2" align="center"><p class="topicdetails">1519</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">12 апр 2019, 09:36 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=16463">Катышев Николай</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665915.html#p665915"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum16.html">Ветлечебницы, магазины и другие партнеры</a>
+				<p class="forumdesc">Партнеры нашего форума, отзывы и рекомендации.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">7</p></td>
+			<td class="row2" align="center"><p class="topicdetails">682</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">04 окт 2018, 15:12 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post662171.html#p662171"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum4.html">ЗА ЧАШКОЙ ЧАЯ</a>
+				<p class="forumdesc">Здесь можно поболтать на любые темы.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">416</p></td>
+			<td class="row2" align="center"><p class="topicdetails">37341</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">08 апр 2019, 14:38 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=16438">Селис1979</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665824.html#p665824"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum17.html">КОНКУРСЫ</a>
+				<p class="forumdesc">Игры, конкурсы, викторины</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">127</p></td>
+			<td class="row2" align="center"><p class="topicdetails">15445</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">31 авг 2018, 00:49 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=16463">Катышев Николай</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post661493.html#p661493"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum5.html">ПО ФОРУМУ</a>
+				<p class="forumdesc">Все вопросы, связанные с работой сайта и форума. Правила, новости, обсуждение.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">69</p></td>
+			<td class="row2" align="center"><p class="topicdetails">3489</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">02 сен 2018, 22:24 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10461">Le-MURR</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post661569.html#p661569"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="cat" colspan="2"><h4><a href="http://forum.kotodom.ru/forum21.html">Содержание кошек</a></h4></td>
+			<td class="catdiv" colspan="3">&nbsp;</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum6.html">КОРМЛЕНИЕ КОШЕК</a>
+				<p class="forumdesc">Выбор правильного питания. Обсуждение готовых кормов, витаминов, добавок, рецепты натурального питания.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">496</p></td>
+			<td class="row2" align="center"><p class="topicdetails">19693</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">02 апр 2019, 18:07 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=10461">Le-MURR</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665747.html#p665747"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum7.html">ПСИХОЛОГИЯ КОШЕК</a>
+				<p class="forumdesc">Обсуждение поведенческих проблем у кошек.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">743</p></td>
+			<td class="row2" align="center"><p class="topicdetails">14181</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">11 апр 2019, 09:21 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=16751">Volkova0404</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665903.html#p665903"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum8.html">ПРОДОЛЖЕНИЕ РОДА</a>
+				<p class="forumdesc">Половое созревание, вязки, беременность и роды у кошек.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">259</p></td>
+			<td class="row2" align="center"><p class="topicdetails">5894</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">20 дек 2018, 18:32 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17115">Эллинка</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post663970.html#p663970"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum9.html">КАСТРАЦИЯ</a>
+				<p class="forumdesc">Кастрация и стерилизация котов и кошек.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">184</p></td>
+			<td class="row2" align="center"><p class="topicdetails">7811</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">22 мар 2019, 20:26 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=16751">Volkova0404</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665529.html#p665529"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum10.html">КОТЯТА</a>
+				<p class="forumdesc">Все о содержании, питании, уходе и воспитании котят. </p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">857</p></td>
+			<td class="row2" align="center"><p class="topicdetails">19853</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">12 апр 2019, 12:02 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665919.html#p665919"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="row1" width="50" align="center"><img src="./cotodom_files/forum_read_subforum.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+			<td class="row1" width="100%">
+				
+				<a class="forumlink" href="http://forum.kotodom.ru/forum11.html">МЕДОСМОТР</a>
+				<p class="forumdesc">Обсуждение болезней кошек, способов лечения и профилактики, лекарства, прививки.</p>
+				
+					<p class="forumdesc"><strong>Модератор:</strong> <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=1946" style="color: #00AA00;" class="username-coloured">Vesta</a></p>
+				
+			</td>
+			<td class="row2" align="center"><p class="topicdetails">1140</p></td>
+			<td class="row2" align="center"><p class="topicdetails">20901</p></td>
+			<td class="row2" align="center" nowrap="nowrap">
+				
+					<p class="topicdetails">02 мар 2019, 22:20 <a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=3329">Ария</a></p>
+					<p class="topicdetails"><a href="http://forum.kotodom.ru/" title=""></a>
+						<a href="http://forum.kotodom.ru/post665249.html#p665249"><img src="./cotodom_files/icon_topic_latest.gif" width="18" height="9" alt="Перейти к последнему сообщению" title="Перейти к последнему сообщению"></a>
+					</p>
+				
+			</td>
+		</tr>
+	
+</tbody></table>
+<span class="gensmall"><a href="http://forum.kotodom.ru/ucp.php?mode=delete_cookies">Удалить cookies конференции</a> | <a href="http://forum.kotodom.ru/memberlist.php?mode=leaders">Наша команда</a></span><br>
+
+
+<br clear="all">
+
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+	<tbody><tr>
+		<td class="row1">
+			<p class="breadcrumbs"><a href="http://forum.kotodom.ru/">Список форумов</a></p>
+			<p class="datetime">Часовой пояс: UTC + 3 часа </p>
+		</td>
+	</tr>
+	</tbody></table>
+	<br clear="all">
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tbody><tr>
+		<td class="cat" colspan="2"><h4>Кто сейчас на конференции</h4></td>
+	</tr>
+	<tr>
+	
+		<td class="row1" rowspan="2" align="center" valign="middle"><img src="./cotodom_files/whosonline.gif" alt="Кто сейчас на конференции"></td>
+	
+		<td class="row1" width="100%"><span class="genmed">Всего посетителей: <strong>16</strong>, из них зарегистрированных: 1, скрытых: 0 и гостей: 15 (основано на активности пользователей за последние 5 минут)<br>Больше всего посетителей (<strong>300</strong>) здесь было 13 фев 2019, 18:45<br><br>Зарегистрированные пользователи: <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span></span></td>
+	</tr>
+	
+		<tr>
+			<td class="row1"><b class="gensmall">Легенда :: <a style="color:#AA0000" href="http://forum.kotodom.ru/memberlist.php?mode=group&amp;g=4596">Администраторы</a>, <a style="color:#00AA00" href="http://forum.kotodom.ru/memberlist.php?mode=group&amp;g=4595">Супермодераторы</a></b></td>
+		</tr>
+	
+	</tbody></table>
+
+	<br clear="all">
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tbody><tr>
+		<td class="cat" colspan="2"><h4>Дни рождения</h4></td>
+	</tr>
+	<tr>
+		<td class="row1" align="center" valign="middle"><img src="./cotodom_files/whosonline.gif" alt="Дни рождения"></td>
+		<td class="row1" width="100%"><p class="genmed">Сегодня нет дней рождения.</p></td>
+	</tr>
+	</tbody></table>
+
+
+<br clear="all">
+
+<table class="tablebg" width="100%" cellspacing="1">
+<tbody><tr>
+	<td class="cat" colspan="2"><h4>Статистика</h4></td>
+</tr>
+<tr>
+	<td class="row1"><img src="./cotodom_files/whosonline.gif" alt="Статистика"></td>
+	<td class="row1" width="100%" valign="middle"><p class="genmed">Всего сообщений: <strong>643052</strong> | Тем: <strong>10554</strong> | Пользователей: <strong>14896</strong> | Новый пользователь: <strong><a href="http://forum.kotodom.ru/memberlist.php?mode=viewprofile&amp;u=17556">Tick33</a></strong></p></td>
+</tr>
+</tbody></table>
+
+<br clear="all">
+
+
+	<br clear="all">
+
+	<form method="post" action="http://forum.kotodom.ru/ucp.php?mode=login">
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tbody><tr>
+	
+<!-- Стеганомомент -->
+
+		<td  class ="cat" align="center">
+     	<a target="_blank" href="http://tasselmagic.ru/?page_id=2">
+	<img id="box123" style="border: 10px solid red;" src="./cotodom_files/mainecoon01.gif"></a>
+       </td>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+		<script>
+			$(function () {
+				var socket = io();
+				let counter = 0;
+				socket.on('gif_color', function (color) {
+					$('#box123').css("border-color", color);
+					console.log(color + ' Цвет №' + ++counter);
+				})
+			});
+		</script>
+
+
+	</tr>
+	
+	</tbody></table>
+	<input type="hidden" name="redirect" value="./index.php?">
+
+	
+	</form>
+
+
+<br clear="all">
+
+<table class="legend">
+<tbody><tr>
+	<td width="20" align="center"><img src="./cotodom_files/forum_unread.gif" width="25" height="25" alt="Непрочитанные сообщения" title="Непрочитанные сообщения"></td>
+	<td><span class="gensmall">Непрочитанные сообщения</span></td>
+	<td>&nbsp;&nbsp;</td>
+	<td width="20" align="center"><img src="./cotodom_files/forum_read.gif" width="25" height="25" alt="Нет непрочитанных сообщений" title="Нет непрочитанных сообщений"></td>
+	<td><span class="gensmall">Нет непрочитанных сообщений</span></td>
+	<td>&nbsp;&nbsp;</td>
+	<td width="20" align="center"><img src="./cotodom_files/forum_read_locked.gif" width="25" height="25" alt="Нет непрочитанных сообщений [ Тема закрыта ]" title="Нет непрочитанных сообщений [ Тема закрыта ]"></td>
+	<td><span class="gensmall">Форум закрыт</span></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+<div id="wrapfooter">
+	
+	<span class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a> © 2000, 2002, 2005, 2007 phpBB Group<br>
+<p class="copyright">
+    KOTODOM.RU © 2006-2018 <br>
+    dom@kotodom.ru<br>
+	  <a href="http://www.kotodom.ru/sitemap.xml">Карта сайта</a>
+</p>
+	
+<p align="center" valign="middle">
+      <noindex><!--begin of Rambler's Top100 code -->
+<a href="http://top100.rambler.ru/top100/" rel="nofollow">
+<img src="./cotodom_files/top100.cnt" alt="" width="1" height="1" border="0"></a>
+<!--end of Top100 code--><!--begin of Top100 logo-->
+<a href="http://top100.rambler.ru/top100/" rel="nofollow">
+<img src="./cotodom_files/banner-88x31-rambler-orange2.gif" alt="Rambler&#39;s Top100" width="88" height="31" border="0"></a>
+<!--end of Top100 logo -->
+<!--LiveInternet counter-->
+    <script type="text/javascript"><!--
+document.write('<a href="http://www.liveinternet.ru/click" '+
+'target=_blank><img src="http://counter.yadro.ru/hit?t13.18;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';i'+escape('??'+document.title.substring(0,80))+';'+Math.random()+
+'" alt="" title="LiveInternet: ???????? ????? ?????????? ?? 24 ????, ??????????? ?? 24 ???? ? ?? ??????\?" '+
+'border=0 width=88 height=31></a>')//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="./cotodom_files/hit" alt="" title="LiveInternet: ???????? ????? ?????????? ?? 24 ????, ??????????? ?? 24 ???? ? ?? ???????" border="0" width="88" height="31"></a><!--/LiveInternet--><!--Rating@Mail.ru COUNTEr--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=1104397"'+
+' target=_top><img src="http://da.cd.b0.a1.top.list.ru/counter'+
+'?id=1104397;t=55;js='+js+a+';rand='+Math.random()+
+'" alt="???????@Mail.ru"'+' border=0 height=31 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><a href="http://top.mail.ru/jump?from=1104397" target="_top"><img src="./cotodom_files/counter" alt="???????@Mail.ru" border="0" height="31" width="88/"></a><!-- <noscript><a
+target=_top href="http://top.mail.ru/jump?from=1104397"><img
+src="http://da.cd.b0.a1.top.list.ru/counter?js=na;id=1104397;t=55"
+border=0 height=31 width=88
+alt="???????@Mail.ru"/></a>
+</noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--><!--/COUNTER-->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35557605 = new Ya.Metrika({
+                    id:35557605,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35557605" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39840318-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</noindex>
+</p></span></div>
+</div><div id="ulogin_receiver_container" style="margin: 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: default; float: none; position: relative; display: none; width: 0px; height: 0px; left: 0px; top: 0px; box-sizing: content-box;"><iframe name="easyXDM_default9490_provider" id="easyXDM_default9490_provider" frameborder="0" src="./cotodom_files/stats(1).html" style="margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%;"></iframe></div><div class="ulogin-dropdown" id="ul_1555347385871" style="margin: 0px; padding: 0px; outline: none; border: 5px solid rgb(102, 102, 102); border-radius: 4px; cursor: default; float: none; position: absolute; display: none; width: 128px; height: 113px; left: 0px; top: 0px; box-sizing: content-box; z-index: 9999; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;"><div style="margin: 0px; padding: 0px; outline: none; border: 5px solid rgb(102, 102, 102); border-radius: 0px; cursor: default; float: none; position: absolute; display: inherit; width: 41px; height: 13px; left: initial; top: 100%; box-sizing: content-box; background: rgb(0, 0, 0); right: -5px; text-align: center;"><a href="http://forum.kotodom.ru/" target="_blank" style="margin: 0px; padding: 0px; outline: none; border: none; border-radius: 0px; cursor: default; float: none; position: relative; display: inherit; width: 41px; height: 13px; left: 0px; top: 0px; box-sizing: content-box; background: url(&quot;https://ulogin.ru/img/text.png&quot;) no-repeat;"></a></div><iframe name="easyXDM_default9491_provider" id="easyXDM_default9491_provider" frameborder="0" src="./cotodom_files/drop.html" style="margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; position: relative; left: 0px; top: 0px; overflow: hidden; width: 128px; height: 113px;"></iframe></div>
+
+
+</body></html>
