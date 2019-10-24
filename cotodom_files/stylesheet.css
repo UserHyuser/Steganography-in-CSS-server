@@ -344,6 +344,10 @@ td.profile {
 	background: #e2d6c8 url('./images/cellpic2_rtl.jpg') repeat-y scroll top right;
 }
 
+#box123{
+	transition:border-color 1.5s linear;
+}
+
 .cat {
 	height: 28px;
 	margin: 0;
